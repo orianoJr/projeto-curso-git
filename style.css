@@ -1,9 +1,23 @@
 @charset "UTF-8";
-h1:hover{
-    color: crimson;
-    background-color: silver;
-
+body{
+    background-color: rgb(112, 112, 235);
+    font-style: arial;
 }
-body {
-    background-color: gold;
+section#corpo {
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    
+    right: 80px;
+    left: 800px;
+    text-align: center;
+}
+footer {
+    color: white;
+}
+div {
+    text-align: center;
 }
