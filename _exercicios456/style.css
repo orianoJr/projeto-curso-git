@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(112, 112, 235);
+    font-style: arial;
+}
+section#corpo {
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    
+    text-align: center;
+}
+footer {
+    color: white;
+    text-align: center;
+}
+div {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+div {
+    text-align: center;
+    margin-right: 110px;
+    padding-right: 120px;
+}
+input#tab {
+    position: relative;
+    left: 200px;
+    top: -20px;
+}

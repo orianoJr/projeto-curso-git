@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>tabuada</h1>
+    <section id="corpo">
+    <div>
+        numero: <input type="number" id="numero" name="numero">
+        multiplicar até: <input type="number" id="multiplicador">
+        <input type="button" value="fazer tabuada" onclick="multiplicar()">
+    </div>
+    <div>
+        <select name="seletor" id="seletor" size="10">
+          <option value="">digite um numero </option>
+        </select>
+    </div>
+    </section>
+    <footer>&copyOrianojr</footer>
+    <script>function multiplicar() {
+        var n1 = document.getElementById('numero')
+        var m1 = document.getElementById('multiplicador')
+        var res = document.getElementById('seletor')
+        if (n1.value.length == 0) {
+            window.alert('ERRO! digite algum numero')
+        } else {
+            res.innerHTML = ''
+            var n = Number(n1.value)
+            var m = Number(m1.value)
+            for (let c = 1; c <= m ; c++){
+                var item = document.createElement('option')
+                item.text += `${n} x ${c} = ${n * c}`
+                res.appendChild(item)
+                item.value = `tab${c}`
+            }
+                 }
+        }
+    </script>
+</body>
+</html>
